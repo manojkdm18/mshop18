@@ -1,0 +1,38 @@
+.Product_container {
+	width: 80%;
+	margin: auto;
+	background-color: #fff;
+	margin-top: 50px;
+	align-items: center;
+	padding: 20px;
+}
+
+.main_img {
+	margin-left: 60px !important;
+}
+
+.wishlist {
+	margin-left: 27rem !important;
+}
+
+.img-hover-zoom {
+	overflow: hidden;
+}
+
+.img-hover-zoom img {
+	transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+	transform: scale(1.7);
+}
+
+.breadcrumb {
+	background-color: #fff !important;
+}
+
+.addtocart_btn {
+	width: 90% !important;
+	margin-left: 20px !important;
+	font-size: 20px !important;
+}

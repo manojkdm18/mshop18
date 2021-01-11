@@ -1,0 +1,41 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name ="com.dao.Product"  table ="product">
+      <id name ="prfnum"  type ="java.lang.Long"  column ="PRFNUM">
+         <generator class="native"/>
+      </id>
+            <property name ="productSku" column ="PRODUCT_SKU" type ="java.lang.String"/>
+            <property name ="productName" column ="PRODUCT_NAME" type ="java.lang.String"/>
+            <property name ="productDesc" column ="PRODUCT_DESC" type ="java.lang.String"/>    
+             <property name ="quantity" column ="QUANTITY" type ="java.lang.Integer"/>
+             <property name ="price" column ="PRICE" type ="java.lang.Double"/>
+             <property name ="discount" column ="DISCOUNT" type ="java.lang.Double"/>
+              <property name ="finalPay" column ="FINALPAY" type ="java.lang.Double"/>
+                  <property name ="img1" column ="PRO_IMG1" type ="java.lang.String"/>  
+                   <property name ="img2" column ="PRO_IMG2" type ="java.lang.String"/>  
+                    <property name ="img3" column ="PRO_IMG3" type ="java.lang.String"/>  
+                    <property name ="img4" column ="PRO_IMG4" type ="java.lang.String"/>  
+           <property name="createDate" column="CREATEDATE"
+			type="java.util.Date" not-null="true" />
+		<property name="modifiedDate" column="MODIFIDATE"
+			type="java.util.Date" not-null="true" />
+		<property name="createdby" column="CREATEDBY"
+			type="java.lang.Integer" not-null="true" />
+		<property name="modifiedby" column="MODIFIEDBY"
+			type="java.lang.Integer" not-null="true" />
+            <property name ="isActive" column ="ISACTIVE" type ="java.lang.String"/>
+         <many-to-one name = "subcategory" column = "SUBCATRFNUM" 
+         class="com.dao.SubCategory" not-null="true"/>
+            <many-to-one name ="colour" column ="COLOUR" 
+         class="com.dao.MshopCnd" not-null="true"/>
+            <many-to-one name ="brand" column ="BRAND" 
+         class="com.dao.MshopCnd" not-null="true"/>
+            <many-to-one name ="entity" column ="CNDENTITY" 
+         class="com.dao.MshopCnd" not-null="true"/>
+      
+   </class>
+</hibernate-mapping>

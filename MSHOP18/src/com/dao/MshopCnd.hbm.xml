@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name ="com.dao.MshopCnd"  table ="mshop_cnd">
+      <id name ="cndrfnum"  type ="java.lang.Long"  column ="CNDRFNUM">
+         <generator class="native"/>
+      </id>
+            <property name ="cndname" column ="CNDNAME" type ="java.lang.String"/>
+            <property name ="cndcode" column ="CNDCODE" type ="java.lang.String"/> 
+            <property name ="cndgroup" column ="CNDGROUP" type ="java.lang.String"/>       
+             <property name="createDate" column="CREATEDATE"
+			type="java.util.Date" not-null="true" />
+		<property name="modifiedDate" column="MODIFIDATE"
+			type="java.util.Date" not-null="true" />
+		<property name="createdby" column="CREATEDBY"
+			type="java.lang.Integer" not-null="true" />
+		<property name="modifiedby" column="MODIFIEDBY"
+			type="java.lang.Integer" not-null="true" />
+		<property name="isActive" column="ISACTIVE" not-null="true" type="java.lang.String"/>
+           
+   </class>
+</hibernate-mapping>

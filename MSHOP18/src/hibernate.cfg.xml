@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mshop18</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">Manoj@123</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="show_sql">false</property>
+		<!-- List of XML mapping files -->
+		  <mapping resource="com/dao/CountryMaster.hbm.xml"></mapping>
+		  <mapping resource="com/dao/StateMaster.hbm.xml"></mapping>
+		  <mapping resource="com/dao/CityMaster.hbm.xml"></mapping>
+		   <mapping resource="com/dao/User.hbm.xml"></mapping> 
+		    <mapping resource="com/dao/category.hbm.xml"></mapping>
+		    <mapping resource="com/dao/subcategory.hbm.xml"></mapping> 
+		     <mapping resource="com/dao/Product.hbm.xml"></mapping> 
+		     <mapping resource="com/dao/MshopCnd.hbm.xml"></mapping> 
+		     <mapping resource="com/dao/MshopBanner.hbm.xml"></mapping> 
+		     <mapping resource="com/dao/CartItems.hbm.xml"></mapping> 
+		  
+		       
+
+	</session-factory>
+</hibernate-configuration>
+

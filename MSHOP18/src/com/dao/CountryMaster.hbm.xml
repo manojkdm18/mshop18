@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.dao.CountryMaster" table="countrymaster">
+		<id name="cmrfnum" type="java.lang.Integer" column="COUNTRYRFNUM">
+			<generator class="native" />
+		</id>
+		<property name="countryName" column="COUNTRYNAME"
+			type="java.lang.String" />
+		<property name="countryCode" column="COUNTRYCODE"
+			type="java.lang.String" />
+		<property name="createDate" column="CREATEDATE"
+			type="java.util.Date" not-null="true" />
+		<property name="modifiedDate" column="MODIFIDATE"
+			type="java.util.Date" not-null="true" />
+		<property name="createdby" column="CREATEDBY"
+			type="java.lang.Integer" not-null="true" />
+		<property name="modifiedby" column="MODIFIEDBY"
+			type="java.lang.Integer" not-null="true" />
+		<property name="IsActive" column="ISACTIVE"
+			type="java.lang.Boolean" not-null="true" />
+
+	</class>
+</hibernate-mapping>

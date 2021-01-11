@@ -1,0 +1,58 @@
+@charset "UTF-8";
+.search_container{
+	padding-left:60px;
+	padding-top:20px;
+	border:1px solid #bbb;
+	width: 100%;
+	box-shadow: 0px 0px 5px 0px #bbb;
+	background-color: #fff;
+	
+}
+ .serachform input[type='text']{
+	width:50%;
+	height: 6vh;
+	border-radius: none;
+	 border: 2px solid #bbb;
+	
+}
+.serachform input[type='password']{
+	width:50%;
+	height: 6vh;
+	border-radius: none;
+	border: 2px solid #bbb;
+	
+	
+}
+
+.serachform input[type='number']{
+	width:50%;
+	height: 6vh;
+	border-radius: none;
+	border: 2px solid #bbb;
+}
+
+.common_submit_btn, .common_clear_btn{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #9400ff;
+  padding: 8px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.common_submit_btn:hover{
+  background-color: #9400ff; 
+  color: #fff; 
+  border: 2px solid #fff;
+  padding: 8px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

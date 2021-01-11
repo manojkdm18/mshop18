@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name ="com.dao.Category"  table ="category">
+      <id name ="catrfnum"  type ="java.lang.Long"  column ="CATRFNUM">
+         <generator class="native"/>
+      </id>
+            <property name ="catName" column ="CATNAME" type ="java.lang.String"/>
+            <property name ="cdesc" column ="CATDESC" type ="java.lang.String"/>    
+           <property name="createDate" column="CREATEDATE"
+			type="java.util.Date" not-null="true" />
+		<property name="modifiedDate" column="MODIFIDATE"
+			type="java.util.Date" not-null="true" />
+		<property name="createdby" column="CREATEDBY"
+			type="java.lang.Integer" not-null="true" />
+		<property name="modifiedby" column="MODIFIEDBY"
+			type="java.lang.Integer" not-null="true" />
+		<property name="isActive" column="ISACTIVE" not-null="true" type="java.lang.String"/>
+            
+      
+   </class>
+</hibernate-mapping>
